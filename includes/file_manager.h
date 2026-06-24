@@ -4,6 +4,7 @@
 #include "editor_types.h"
 #include "buffer.h"
 
+char *get_curr_build_path();
 int load_buffers_from_file(editor_ctx *edt_ctx, char *file_path);
 int load_buffers_from_static_dir(editor_ctx *edt_ctx, char *file_name);
 int save_file_from_buffers(editor_ctx *edt_ctx, char *new_name);

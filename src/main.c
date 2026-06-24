@@ -7,34 +7,39 @@
 #include "buffer.h"
 #include "screen.h"
 #include "terminal.h"
-#include "modes.h"
 #include "file_manager.h"
 #include "editor_types.h"
 #include "windows.h"
 
+#include "command_mode.h"
+#include "normal_mode.h"
+#include "insert_mode.h"
+
 editor_ctx edt_ctx = {
   .commd_row_cx = 1,
+  .abs_x_offset = 0,
 
   .curr_opm = NORMAL,
   .windows = NULL,
   .num_windows = 0,
   .curr_window = 0,
   .clipboard = NULL,
+  .window_id_count = 2,
 };
 
 int main(int argc, char *argv[]){
   enableRawMode();
   atexit(disableRawMode);
-
-  reset_screen(&edt_ctx);
+   
   create_window(&edt_ctx);
+  reset_screen(&edt_ctx);
 
   // check if user wants to open a file with argvs
   if(argc > 1) load_buffers_from_file(&edt_ctx, argv[1]);
 
   while(1){
     render_screen(&edt_ctx);
-    char key = readKey();
+    int key = readKey();
 
     // change mode if ESCAPE is pressed
     if (key == '\x1b') {

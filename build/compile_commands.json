@@ -7,44 +7,56 @@
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/buffer.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/buffer.c",
-  "output": "CMakeFiles/myvim.dir/src/buffer.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/buffer.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/text_buffer/buffer.c",
+  "output": "CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o"
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/screen.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/screen.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/screen.c",
-  "output": "CMakeFiles/myvim.dir/src/screen.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/render/screen.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/render/screen.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/render/screen.c",
+  "output": "CMakeFiles/myvim.dir/src/render/screen.c.o"
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/terminal.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/terminal.c",
-  "output": "CMakeFiles/myvim.dir/src/terminal.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/config/terminal.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/config/terminal.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/config/terminal.c",
+  "output": "CMakeFiles/myvim.dir/src/config/terminal.c.o"
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/modes.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/modes.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/modes.c",
-  "output": "CMakeFiles/myvim.dir/src/modes.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/control/normal_mode.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/control/normal_mode.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/control/normal_mode.c",
+  "output": "CMakeFiles/myvim.dir/src/control/normal_mode.c.o"
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/commands.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/commands.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/commands.c",
-  "output": "CMakeFiles/myvim.dir/src/commands.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/control/insert_mode.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/control/insert_mode.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/control/insert_mode.c",
+  "output": "CMakeFiles/myvim.dir/src/control/insert_mode.c.o"
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/file_manager.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/file_manager.c",
-  "output": "CMakeFiles/myvim.dir/src/file_manager.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/control/command_mode.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/control/command_mode.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/control/command_mode.c",
+  "output": "CMakeFiles/myvim.dir/src/control/command_mode.c.o"
 },
 {
   "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
-  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/windows.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/windows.c",
-  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/windows.c",
-  "output": "CMakeFiles/myvim.dir/src/windows.c.o"
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/control/commands.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/control/commands.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/control/commands.c",
+  "output": "CMakeFiles/myvim.dir/src/control/commands.c.o"
+},
+{
+  "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/files/file_manager.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/files/file_manager.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/files/file_manager.c",
+  "output": "CMakeFiles/myvim.dir/src/files/file_manager.c.o"
+},
+{
+  "directory": "/home/pedrofb/Desktop/Cs/C/myvim/build",
+  "command": "/usr/bin/gcc  -I/home/pedrofb/Desktop/Cs/C/myvim/includes -g -o CMakeFiles/myvim.dir/src/windows/windows.c.o -c /home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c",
+  "file": "/home/pedrofb/Desktop/Cs/C/myvim/src/windows/windows.c",
+  "output": "CMakeFiles/myvim.dir/src/windows/windows.c.o"
 }
 ]

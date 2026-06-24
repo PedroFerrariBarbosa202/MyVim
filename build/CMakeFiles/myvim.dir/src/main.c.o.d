@@ -73,8 +73,10 @@ CMakeFiles/myvim.dir/src/main.c.o: \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/screen.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/terminal.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/modes.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/file_manager.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/buffer.h \
  /home/pedrofb/Desktop/Cs/C/myvim/includes/editor_types.h \
- /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/windows.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/command_mode.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/normal_mode.h \
+ /home/pedrofb/Desktop/Cs/C/myvim/includes/insert_mode.h

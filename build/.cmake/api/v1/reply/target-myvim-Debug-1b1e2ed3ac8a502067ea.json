@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 16,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -62,7 +62,9 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -102,7 +104,9 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -117,43 +121,55 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/buffer.c",
+			"path" : "src/text_buffer/buffer.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/screen.c",
+			"path" : "src/render/screen.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/terminal.c",
+			"path" : "src/config/terminal.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/modes.c",
+			"path" : "src/control/normal_mode.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/commands.c",
+			"path" : "src/control/insert_mode.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/file_manager.c",
+			"path" : "src/control/command_mode.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/windows.c",
+			"path" : "src/control/commands.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/files/file_manager.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/windows/windows.c",
 			"sourceGroupIndex" : 0
 		}
 	],

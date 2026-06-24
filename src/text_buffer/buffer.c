@@ -9,9 +9,22 @@
 #include "windows.h"
 
 int readKey() {
-    char c;
-    read(STDIN_FILENO, &c, 1);
-    return c;
+    char c[10];
+    if(read(STDIN_FILENO, &c, 3) == -1) return -1;
+    
+    // handle arrow keys
+    if(c[0] == '\x1b'){
+      if (c[1] == '[') {
+          switch (c[2]) {
+              case 'A': return ARROW_UP;
+              case 'B': return ARROW_DOWN;
+              case 'C': return ARROW_RIGHT;
+              case 'D': return ARROW_LEFT;
+          }
+      }
+      return '\x1b';
+    }
+    return c[0];
 }
 
 void create_new_erow(editor_ctx *edt_ctx) { 
@@ -28,7 +41,6 @@ void create_new_erow(editor_ctx *edt_ctx) {
 }
 
 void append_str_erow(editor_ctx *edt_ctx, erow *row, char *str, int at) {
-
     window_t *curr_window = NULL;
 
     if(edt_ctx != NULL)

@@ -129,77 +129,149 @@ myvim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/build
 .PHONY : myvim/fast
 
-src/buffer.o: src/buffer.c.o
-.PHONY : src/buffer.o
+src/config/terminal.o: src/config/terminal.c.o
+.PHONY : src/config/terminal.o
 
 # target to build an object file
-src/buffer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/buffer.c.o
-.PHONY : src/buffer.c.o
+src/config/terminal.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/config/terminal.c.o
+.PHONY : src/config/terminal.c.o
 
-src/buffer.i: src/buffer.c.i
-.PHONY : src/buffer.i
+src/config/terminal.i: src/config/terminal.c.i
+.PHONY : src/config/terminal.i
 
 # target to preprocess a source file
-src/buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/buffer.c.i
-.PHONY : src/buffer.c.i
+src/config/terminal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/config/terminal.c.i
+.PHONY : src/config/terminal.c.i
 
-src/buffer.s: src/buffer.c.s
-.PHONY : src/buffer.s
+src/config/terminal.s: src/config/terminal.c.s
+.PHONY : src/config/terminal.s
 
 # target to generate assembly for a file
-src/buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/buffer.c.s
-.PHONY : src/buffer.c.s
+src/config/terminal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/config/terminal.c.s
+.PHONY : src/config/terminal.c.s
 
-src/commands.o: src/commands.c.o
-.PHONY : src/commands.o
+src/control/command_mode.o: src/control/command_mode.c.o
+.PHONY : src/control/command_mode.o
 
 # target to build an object file
-src/commands.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/commands.c.o
-.PHONY : src/commands.c.o
+src/control/command_mode.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/command_mode.c.o
+.PHONY : src/control/command_mode.c.o
 
-src/commands.i: src/commands.c.i
-.PHONY : src/commands.i
+src/control/command_mode.i: src/control/command_mode.c.i
+.PHONY : src/control/command_mode.i
 
 # target to preprocess a source file
-src/commands.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/commands.c.i
-.PHONY : src/commands.c.i
+src/control/command_mode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/command_mode.c.i
+.PHONY : src/control/command_mode.c.i
 
-src/commands.s: src/commands.c.s
-.PHONY : src/commands.s
+src/control/command_mode.s: src/control/command_mode.c.s
+.PHONY : src/control/command_mode.s
 
 # target to generate assembly for a file
-src/commands.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/commands.c.s
-.PHONY : src/commands.c.s
+src/control/command_mode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/command_mode.c.s
+.PHONY : src/control/command_mode.c.s
 
-src/file_manager.o: src/file_manager.c.o
-.PHONY : src/file_manager.o
+src/control/commands.o: src/control/commands.c.o
+.PHONY : src/control/commands.o
 
 # target to build an object file
-src/file_manager.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/file_manager.c.o
-.PHONY : src/file_manager.c.o
+src/control/commands.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/commands.c.o
+.PHONY : src/control/commands.c.o
 
-src/file_manager.i: src/file_manager.c.i
-.PHONY : src/file_manager.i
+src/control/commands.i: src/control/commands.c.i
+.PHONY : src/control/commands.i
 
 # target to preprocess a source file
-src/file_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/file_manager.c.i
-.PHONY : src/file_manager.c.i
+src/control/commands.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/commands.c.i
+.PHONY : src/control/commands.c.i
 
-src/file_manager.s: src/file_manager.c.s
-.PHONY : src/file_manager.s
+src/control/commands.s: src/control/commands.c.s
+.PHONY : src/control/commands.s
 
 # target to generate assembly for a file
-src/file_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/file_manager.c.s
-.PHONY : src/file_manager.c.s
+src/control/commands.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/commands.c.s
+.PHONY : src/control/commands.c.s
+
+src/control/insert_mode.o: src/control/insert_mode.c.o
+.PHONY : src/control/insert_mode.o
+
+# target to build an object file
+src/control/insert_mode.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/insert_mode.c.o
+.PHONY : src/control/insert_mode.c.o
+
+src/control/insert_mode.i: src/control/insert_mode.c.i
+.PHONY : src/control/insert_mode.i
+
+# target to preprocess a source file
+src/control/insert_mode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/insert_mode.c.i
+.PHONY : src/control/insert_mode.c.i
+
+src/control/insert_mode.s: src/control/insert_mode.c.s
+.PHONY : src/control/insert_mode.s
+
+# target to generate assembly for a file
+src/control/insert_mode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/insert_mode.c.s
+.PHONY : src/control/insert_mode.c.s
+
+src/control/normal_mode.o: src/control/normal_mode.c.o
+.PHONY : src/control/normal_mode.o
+
+# target to build an object file
+src/control/normal_mode.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/normal_mode.c.o
+.PHONY : src/control/normal_mode.c.o
+
+src/control/normal_mode.i: src/control/normal_mode.c.i
+.PHONY : src/control/normal_mode.i
+
+# target to preprocess a source file
+src/control/normal_mode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/normal_mode.c.i
+.PHONY : src/control/normal_mode.c.i
+
+src/control/normal_mode.s: src/control/normal_mode.c.s
+.PHONY : src/control/normal_mode.s
+
+# target to generate assembly for a file
+src/control/normal_mode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/control/normal_mode.c.s
+.PHONY : src/control/normal_mode.c.s
+
+src/files/file_manager.o: src/files/file_manager.c.o
+.PHONY : src/files/file_manager.o
+
+# target to build an object file
+src/files/file_manager.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/files/file_manager.c.o
+.PHONY : src/files/file_manager.c.o
+
+src/files/file_manager.i: src/files/file_manager.c.i
+.PHONY : src/files/file_manager.i
+
+# target to preprocess a source file
+src/files/file_manager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/files/file_manager.c.i
+.PHONY : src/files/file_manager.c.i
+
+src/files/file_manager.s: src/files/file_manager.c.s
+.PHONY : src/files/file_manager.s
+
+# target to generate assembly for a file
+src/files/file_manager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/files/file_manager.c.s
+.PHONY : src/files/file_manager.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -225,101 +297,77 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/modes.o: src/modes.c.o
-.PHONY : src/modes.o
+src/render/screen.o: src/render/screen.c.o
+.PHONY : src/render/screen.o
 
 # target to build an object file
-src/modes.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/modes.c.o
-.PHONY : src/modes.c.o
+src/render/screen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/render/screen.c.o
+.PHONY : src/render/screen.c.o
 
-src/modes.i: src/modes.c.i
-.PHONY : src/modes.i
+src/render/screen.i: src/render/screen.c.i
+.PHONY : src/render/screen.i
 
 # target to preprocess a source file
-src/modes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/modes.c.i
-.PHONY : src/modes.c.i
+src/render/screen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/render/screen.c.i
+.PHONY : src/render/screen.c.i
 
-src/modes.s: src/modes.c.s
-.PHONY : src/modes.s
+src/render/screen.s: src/render/screen.c.s
+.PHONY : src/render/screen.s
 
 # target to generate assembly for a file
-src/modes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/modes.c.s
-.PHONY : src/modes.c.s
+src/render/screen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/render/screen.c.s
+.PHONY : src/render/screen.c.s
 
-src/screen.o: src/screen.c.o
-.PHONY : src/screen.o
+src/text_buffer/buffer.o: src/text_buffer/buffer.c.o
+.PHONY : src/text_buffer/buffer.o
 
 # target to build an object file
-src/screen.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/screen.c.o
-.PHONY : src/screen.c.o
+src/text_buffer/buffer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/buffer.c.o
+.PHONY : src/text_buffer/buffer.c.o
 
-src/screen.i: src/screen.c.i
-.PHONY : src/screen.i
+src/text_buffer/buffer.i: src/text_buffer/buffer.c.i
+.PHONY : src/text_buffer/buffer.i
 
 # target to preprocess a source file
-src/screen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/screen.c.i
-.PHONY : src/screen.c.i
+src/text_buffer/buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/buffer.c.i
+.PHONY : src/text_buffer/buffer.c.i
 
-src/screen.s: src/screen.c.s
-.PHONY : src/screen.s
+src/text_buffer/buffer.s: src/text_buffer/buffer.c.s
+.PHONY : src/text_buffer/buffer.s
 
 # target to generate assembly for a file
-src/screen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/screen.c.s
-.PHONY : src/screen.c.s
+src/text_buffer/buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/text_buffer/buffer.c.s
+.PHONY : src/text_buffer/buffer.c.s
 
-src/terminal.o: src/terminal.c.o
-.PHONY : src/terminal.o
+src/windows/windows.o: src/windows/windows.c.o
+.PHONY : src/windows/windows.o
 
 # target to build an object file
-src/terminal.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/terminal.c.o
-.PHONY : src/terminal.c.o
+src/windows/windows.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows/windows.c.o
+.PHONY : src/windows/windows.c.o
 
-src/terminal.i: src/terminal.c.i
-.PHONY : src/terminal.i
-
-# target to preprocess a source file
-src/terminal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/terminal.c.i
-.PHONY : src/terminal.c.i
-
-src/terminal.s: src/terminal.c.s
-.PHONY : src/terminal.s
-
-# target to generate assembly for a file
-src/terminal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/terminal.c.s
-.PHONY : src/terminal.c.s
-
-src/windows.o: src/windows.c.o
-.PHONY : src/windows.o
-
-# target to build an object file
-src/windows.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows.c.o
-.PHONY : src/windows.c.o
-
-src/windows.i: src/windows.c.i
-.PHONY : src/windows.i
+src/windows/windows.i: src/windows/windows.c.i
+.PHONY : src/windows/windows.i
 
 # target to preprocess a source file
-src/windows.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows.c.i
-.PHONY : src/windows.c.i
+src/windows/windows.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows/windows.c.i
+.PHONY : src/windows/windows.c.i
 
-src/windows.s: src/windows.c.s
-.PHONY : src/windows.s
+src/windows/windows.s: src/windows/windows.c.s
+.PHONY : src/windows/windows.s
 
 # target to generate assembly for a file
-src/windows.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows.c.s
-.PHONY : src/windows.c.s
+src/windows/windows.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myvim.dir/build.make CMakeFiles/myvim.dir/src/windows/windows.c.s
+.PHONY : src/windows/windows.c.s
 
 # Help Target
 help:
@@ -330,30 +378,36 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myvim"
-	@echo "... src/buffer.o"
-	@echo "... src/buffer.i"
-	@echo "... src/buffer.s"
-	@echo "... src/commands.o"
-	@echo "... src/commands.i"
-	@echo "... src/commands.s"
-	@echo "... src/file_manager.o"
-	@echo "... src/file_manager.i"
-	@echo "... src/file_manager.s"
+	@echo "... src/config/terminal.o"
+	@echo "... src/config/terminal.i"
+	@echo "... src/config/terminal.s"
+	@echo "... src/control/command_mode.o"
+	@echo "... src/control/command_mode.i"
+	@echo "... src/control/command_mode.s"
+	@echo "... src/control/commands.o"
+	@echo "... src/control/commands.i"
+	@echo "... src/control/commands.s"
+	@echo "... src/control/insert_mode.o"
+	@echo "... src/control/insert_mode.i"
+	@echo "... src/control/insert_mode.s"
+	@echo "... src/control/normal_mode.o"
+	@echo "... src/control/normal_mode.i"
+	@echo "... src/control/normal_mode.s"
+	@echo "... src/files/file_manager.o"
+	@echo "... src/files/file_manager.i"
+	@echo "... src/files/file_manager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/modes.o"
-	@echo "... src/modes.i"
-	@echo "... src/modes.s"
-	@echo "... src/screen.o"
-	@echo "... src/screen.i"
-	@echo "... src/screen.s"
-	@echo "... src/terminal.o"
-	@echo "... src/terminal.i"
-	@echo "... src/terminal.s"
-	@echo "... src/windows.o"
-	@echo "... src/windows.i"
-	@echo "... src/windows.s"
+	@echo "... src/render/screen.o"
+	@echo "... src/render/screen.i"
+	@echo "... src/render/screen.s"
+	@echo "... src/text_buffer/buffer.o"
+	@echo "... src/text_buffer/buffer.i"
+	@echo "... src/text_buffer/buffer.s"
+	@echo "... src/windows/windows.o"
+	@echo "... src/windows/windows.i"
+	@echo "... src/windows/windows.s"
 .PHONY : help
 
 

@@ -1,9 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <limits.h>
+#include <unistd.h>
+#include <string.h>
+#include <libgen.h>
 
 #include "editor_types.h"
 #include "buffer.h"
+
+char *get_curr_build_path()
+{
+    char *path = malloc(PATH_MAX);
+
+    ssize_t len = readlink("/proc/self/exe", path, PATH_MAX - 1);
+    if (len == -1) {
+        free(path);
+        return NULL;
+    }
+
+    path[len] = '\0';
+
+    char *dir = strdup(dirname(path));
+
+    free(path);
+    return dir;
+}
 
 void set_current_directory(editor_ctx *edt_ctx, char *new_dir){
     window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
@@ -76,17 +98,18 @@ int load_buffers_from_file(editor_ctx *edt_ctx, char *file_name){
     int c;
     int curr_row = 0;
 
-    char curr_dir[256];
-    if (curr_window->curr_dir != NULL) snprintf(curr_dir, sizeof(curr_dir), "%s/%s",
-                                            curr_window->curr_dir, file_name);
-    else snprintf(curr_dir, sizeof(curr_dir), "%s", file_name);
-    
-    fp = fopen(curr_dir, "r");
+    char *curr_dir;
+    curr_dir = (curr_window->curr_dir != NULL ? curr_window->curr_dir : get_curr_build_path());
+
+    char path[512];
+    snprintf(path, sizeof(path), "%s/%s", curr_dir, file_name);
+    fp = fopen(path, "r");
 
     if(fp == NULL) return 1;
 
-    // set current file
+    // set current file and directory
     set_current_file(edt_ctx, file_name);
+    set_current_directory(edt_ctx, curr_dir);
 
     clear_rows(edt_ctx);
     create_new_erow(edt_ctx);
@@ -122,7 +145,7 @@ int save_file_from_buffers(editor_ctx *edt_ctx, char *new_name){
     FILE *fp;
     int curr_row = 0;
 
-    char curr_dir[256];
+    char curr_dir[512];
     sprintf(curr_dir, "%s/%s", 
             curr_window->curr_dir == NULL ? "" : curr_window->curr_dir,
             new_name == NULL ? curr_window->curr_file : new_name);

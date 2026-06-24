@@ -4,13 +4,15 @@ project(myvim)
 
 add_executable(myvim
     src/main.c
-    src/buffer.c
-    src/screen.c
-    src/terminal.c
-    src/modes.c
-    src/commands.c
-    src/file_manager.c
-    src/windows.c
+    src/text_buffer/buffer.c
+    src/render/screen.c
+    src/config/terminal.c
+    src/control/normal_mode.c
+    src/control/insert_mode.c
+    src/control/command_mode.c
+    src/control/commands.c
+    src/files/file_manager.c
+    src/windows/windows.c
 )
 
 target_include_directories(myvim PRIVATE includes)

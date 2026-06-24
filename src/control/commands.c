@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 
 #include "editor_types.h"
 #include "screen.h"
@@ -17,7 +18,6 @@ char **tokenize_commd(char *commd){
 
     while(token != NULL){
         buffer[i++] = token;
-
         token = strtok(NULL, " ");
     }
 
@@ -52,7 +52,7 @@ void exec_command(editor_ctx *edt_ctx, char *commd){
   }
 
   // load a file into memory
-  if(strcmp(buffer[0], "f") == 0){
+  if(strcmp(buffer[0], "fopen") == 0){
     if(buffer[1] == NULL) return;
       load_buffers_from_file(edt_ctx, buffer[1]);
   }
@@ -69,18 +69,18 @@ void exec_command(editor_ctx *edt_ctx, char *commd){
 
   // save a file
   if(strcmp(buffer[0], "s") == 0){
-    char *path = buffer[1] == NULL ? NULL : buffer[1];
+    char *path = buffer[1];
     save_file_from_buffers(edt_ctx, path);
   }
 
   // save a directory
   if(strcmp(buffer[0], "dir") == 0){
-    char *path = buffer[1] == NULL ? NULL : buffer[1];
+    char *path = buffer[1];
     set_current_directory(edt_ctx, path);
   }
 
   // create new window
-  if(strcmp(buffer[0], "n") == 0){
+  if(strcmp(buffer[0], "w") == 0){
     int num_lines = (buffer[1] == NULL ? 1 : strtol(buffer[1], NULL, 10));
     for(int i = 0; i < num_lines; i++)
       create_window(edt_ctx);
@@ -97,6 +97,55 @@ void exec_command(editor_ctx *edt_ctx, char *commd){
   // show help window
   if(strcmp(buffer[0], "help") == 0){
     load_buffers_from_static_dir(edt_ctx, "help.txt");
+  }
+
+  // open input window
+  if(strcmp(buffer[0], "in") == 0){
+    window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
+
+    set_current_directory(edt_ctx, get_curr_build_path());
+    load_buffers_from_file(edt_ctx, "input.txt");
+    curr_window->window_id = 0;
+
+  }
+
+  // open output window
+  if(strcmp(buffer[0], "out") == 0){
+    window_t *curr_window = &(edt_ctx->windows[edt_ctx->curr_window]);
+
+    set_current_directory(edt_ctx, get_curr_build_path());
+    load_buffers_from_file(edt_ctx, "output.txt");
+    curr_window->window_id = 1;
+  }
+  
+  // open sample projects
+  if(strcmp(buffer[0], "fopens") == 0){
+    if(buffer[1] != NULL){
+      char tmp[256];
+      sprintf(tmp, "%s/samples", get_curr_build_path());
+      set_current_directory(edt_ctx, tmp);
+      load_buffers_from_file(edt_ctx, buffer[1]);
+    }
+  }
+
+  // build and execute curr file
+  if(strcmp(buffer[0], "exec") == 0){
+    // save file
+    save_file_from_buffers(edt_ctx, NULL);
+
+    char tmp[1024];
+
+    snprintf(tmp, sizeof(tmp),
+        "bash \"%s/exec.sh\" \"%s\" \"%s\"",
+        get_curr_build_path(),
+        curr_window->curr_file,
+        curr_window->curr_dir
+    );
+
+    system(tmp);
+
+    // open output window if it exists
+    open_window_by_id(edt_ctx, 1);
   }
 }
 
